@@ -1,2 +1,2 @@
 # Leetcode-May-Challenge
-Leetcode May Challenge questions will be solved in C++
+Leetcode May Challenge questions solved in C++.The solutions may or may not be optimal.
