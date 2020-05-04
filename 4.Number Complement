@@ -1,0 +1,24 @@
+/*
+Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
+Example 1:
+Input: 5
+Output: 2
+Explanation: The binary representation of 5 is 101 (no leading zero bits), and its complement is 010. So you need to output 2.
+*/
+
+class Solution {
+public:
+    int findComplement(int num) {
+      // calculating number of bits in the number
+	int x = log2(num)+1; 
+
+	// Considering number to be 32 bit integer; 
+	bitset<32> b(num); 
+	// reversing the bits one by one 
+	for (int i = 0; i < x; i++) 
+		b.flip(i); 
+
+	// converting bitset to number 
+	return  b.to_ulong(); 
+    }
+};
